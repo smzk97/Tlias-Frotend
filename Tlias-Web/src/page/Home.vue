@@ -1,6 +1,7 @@
 <script setup>
 import Aside from '@/components/Aside.vue';
 import Header from '@/components/Header.vue'
+import Main from '@/components/Main.vue';
 </script>
 
 <template>
@@ -13,7 +14,9 @@ import Header from '@/components/Header.vue'
                 <el-aside width="200px">
                     <Aside></Aside>
                 </el-aside>
-                <el-main>Main</el-main>
+                <el-main>
+                    <Main></Main>
+                </el-main>
             </el-container>
         </el-container>
     </div>

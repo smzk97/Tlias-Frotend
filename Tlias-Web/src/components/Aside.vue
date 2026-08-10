@@ -8,8 +8,4 @@
     </div>
 </template>
 
-<style scoped>
-.asider {
-    bottom: 5px;
-}
-</style>
+<style scoped></style>
