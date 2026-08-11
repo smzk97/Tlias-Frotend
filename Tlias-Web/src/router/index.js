@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/page/Home.vue'
+import Main from '@/components/Main.vue'
 import Class from '@/page/class/Class.vue'
 import Department from '@/page/department/Department.vue'
 import Employee from '@/page/employee/Employee.vue'
@@ -12,13 +13,14 @@ const route = [
   {
     path: "/",
     name: "",
+    component: Home,
     redirect: "/home",
     meta: { title: "首页" },
     children: [
       {
         path: "home",
         name: "home",
-        component: Home,
+        component: Main,
         meta: { title: '首页' }
       },
       {

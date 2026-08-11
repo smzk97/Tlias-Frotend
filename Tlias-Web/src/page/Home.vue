@@ -1,7 +1,7 @@
 <script setup>
 import Aside from '@/components/Aside.vue';
 import Header from '@/components/Header.vue'
-import Main from '@/components/Main.vue';
+import Main from '@/page/main/Main.vue';
 </script>
 
 <template>
@@ -11,15 +11,23 @@ import Main from '@/components/Main.vue';
                 <Header></Header>
             </el-header>
             <el-container>
-                <el-aside width="200px">
+                <el-aside width="250px">
                     <Aside></Aside>
                 </el-aside>
                 <el-main>
-                    <Main></Main>
+                    <router-view></router-view>
                 </el-main>
             </el-container>
         </el-container>
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.common-layout {
+    height: 100vh;
+}
+
+.common-layout>.el-container {
+    height: 100%;
+}
+</style>

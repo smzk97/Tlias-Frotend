@@ -9,7 +9,7 @@
                 <ElementPlus />
             </el-icon>
             <div class="text-2xl font-serif text-light-200" id="title">
-                智能学习辅助系统
+                智能管理平台
             </div>
         </div>
     </div>
